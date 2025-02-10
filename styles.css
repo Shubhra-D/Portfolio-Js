@@ -3,7 +3,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color:rgb(151, 228, 228);
+}
+h1{
+    text-align: center;
+    color:rgb(24, 23, 23);
+
 }
 h2{
     text-align: center;
@@ -94,7 +98,10 @@ button {
     width: 80%;
     max-width: 400px;
     height: auto;
-    background-color: transparent;
+    background:none;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px lightslategray;
 }
 
 .home-right {
@@ -166,13 +173,17 @@ button {
 }
 
 .about-content img {
-    width: 200px;
-    height: 300px;
-
+    width: 300px;
+    height: 400px;
+    background: none;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px lightslategray;
 }
 .about-text {
     max-width: 500px;
     font-size:larger;
+    color:rgb(39, 38, 38);
 }
 
  
@@ -227,21 +238,24 @@ button {
 /* Projects Section */
 #projects {
     padding: 50px;
-    background-color: white;
+    background-color: rgb(248, 237, 237);
 }
 
 .project {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 40px;
 }
 
 .project-description {
-    width: 50%;
+    width: 40%;
+    margin-left: -50px;
+    color:rgb(46, 45, 45);
+    font-size: larger;
 }
 
 .project-image img {
-    width: 70%;
+    width: 80%;
     height: auto;
     border-radius: 10px;
 }
@@ -264,6 +278,7 @@ button {
 .contact-content ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 .contact-content li {
