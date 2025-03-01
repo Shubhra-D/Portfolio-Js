@@ -1,158 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shubhra - Frontend Developer</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css"/>
     <script src="https://kit.fontawesome.com/ba85bd6452.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
   </head>
-  <body>
+<body>
+  <div id="particles-js"></div>
     <!-- Navbar -->
     <nav>
-      <div class="navbar">
-        <div class="navbar-name">
-      <span>Shubhra Dwivedi</span>
+        <div class="navbar">
+            <div class="navbar-name">
+                <span class="highlight">Shubhra Dwivedi</span>
+                <img src="./assests/logo.jpeg"  alt="logo"/>
+            </div>
+            <div class="navbar-links" id="nav-links">
+                <a href="#home"><i class="fa-solid fa-house"></i>
+                  Home</a>
+                <a href="#about"><i class="fa-solid fa-user"></i>
+                  About</a>
+                <a href="#skills"><i class="fa-solid fa-code"></i>
+                  Skills</a>
+                <a href="#projects"><i class="fa-solid fa-diagram-project"></i>
+                  Projects</a>
+                <a href="#" id="resume-link"><i class="fa-solid fa-file"></i>
+                  Resume</a>
+                  <!--Resume popup hidden-->
+                  <div id="resume-popup" class="popup">
+                      <button id="download"> <i class="fas fa-download"></i>Download Resume</button>
+                      <button id="view"> <i class="fas fa-external-link-alt"></i>View Resume</button>
+                  </div>
+                <a href="#contact"><i class="fa-solid fa-envelope"></i>
+                  Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">&#9776;</div>
         </div>
-        <div class="navbar-links" id="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#stats">Stats</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="hamburger" id="hamburger">&#9776;</div>
-      </div>
     </nav>
 
     <!-- Home Section -->
     <section id="home">
-      <div class="home-content">
-        <div class="home-left">
-          <!-- Image of female user sitting in front of laptop -->
-          <img
-            src="./assests/dev.jpg"
-            alt="Female user working on laptop"
-          />
+        <div class="home-content">
+            <div class="home-left">
+                <img src="./assests/dev.jpg" alt="Female user working on laptop" />
+            </div>
+            <div class="home-right">
+                <h1><span id="waving-hi">👋 </span> Hi, I'm <span class="highlight">Shubhra</span></h1>
+                <p class="profession">
+                    <span id="typed-text"></span>
+                </p>
+                <!-- Social Media Links -->
+                <div class="social-icons">
+                    <a href="https://github.com/Shubhra-D" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shubhra-dwivedi-b7b513233/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:shubhradwivedi21@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
         </div>
-        <div class="home-right">
-          <h1>Hi, I'm Shubhra</h1>
-          <p class="profession">
-            <span id="typed-text"></span>
-          </p>
-        </div>
-      </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
         <h2>My Brief Introduction</h2>
-      <div class="about-content">
-         <div>
-          <img src="./assests/newteetuImage.jpeg" alt="Shubhra's Photo" />
-
-         </div>
-        <div class="about-text">
-          <p>
-            Hii, I'm Shubhra, a frontend developer from a non-tech background to
-            now building user friendly websites my journey started when I got
-            graduated in 2024 with Bachelors in Mathematics and got to know
-            about Masai's EmpowerHer programme ,Here Masai's Mentors not only
-            gave me the relevant skills but also polished my creative and logical
-            thinking .
-            <div><b>Click below to view my resume!</b></div>
-          </p>
-          <button onclick="window.open('https://drive.google.com/file/d/1FtaQlrEnx_ftbwE35K-ifhGAnLoM72Gl/view?usp=sharing' , '_blank')" class="resume-btn">View Resume</button>
-          
+        <div class="about-content">
+            <div>
+                <img src="./assests/shubhra.jpeg" alt="Shubhra's Photo" />
+            </div>
+            <div class="about-text">
+                <p>
+                    Hi, I'm Shubhra, a frontend developer transitioning from a non-tech background to building interactive websites. I graduated in 2024 with a Bachelor's in Mathematics and discovered my passion for coding through Masai's EmpowerHer program.
+                </p>
+                <div><b>Click below to view my resume!</b></div>
+                <button onclick="window.open( 'https://drive.google.com/file/d/1BYtPdDb4pKiVbdkeHhlcd50guR5MsE65/view?usp=sharing' , '_blank')" class="resume-btn"><i class="fa-solid fa-file-lines"></i>View Resume</button>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
-      <div class="skills-content">
-        <h2>My Skills</h2>
-        <div class="skills-list">
-          <div class="skill" id="html">
-            <img src="./assests/html.png" alt="html-icon"/>
-          </div>
-          <div class="skill" id="css">
-            <img src="./assests/css.png" alt="css-icon"/>
-          </div>
-          <div class="skill" id="js">
-            <img src="./assests/Js.png" alt="js-icon"/>
-          </div>
-          <div class="skill" id="react">
-           <img src="./assests/React.png" alt="react-icon"/>
-          </div>
+        <div class="skills-content">
+            <h2>My Skills</h2>
+            <div class="skills-list">
+                <div class="skill" id="html">
+                    <img src="./assests/html.png" alt="html-icon" />
+                </div>
+                <div class="skill" id="css">
+                    <img src="./assests/css.png" alt="css-icon" />
+                </div>
+                <div class="skill" id="js">
+                    <img src="./assests/Js.png" alt="js-icon" />
+                </div>
+                <div class="skill" id="react">
+                    <img src="./assests/React.png" alt="react-icon" />
+                </div>
+                <div class="skill" id="git">
+                     <img src="./assests/gitIcon.png" alt="git-icon"/>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-      <div class="projects-content">
-        <h2>My Projects</h2>
-        <div class="project">
-          <div class="project-image">
-            <img src="./assests/project.png" alt="Project" />
-          </div>
-          <div class="project-description">
-            <h3>Zappos</h3>
-            <p>Zappos is an American online Clothing & Shoes website in Las Vegas ,United States .The company was founded in 1999 and initially was named as Shoesite.com .In july 2009 Amazon a product based company aquired it in deal worth $1.2 billion at the time.</p>
-            <a href="https://shubhra-d.github.io/Project-I/" target="_blank">
-              <button>View Live</button>
-            </a>
-            <a href="https://github.com/Shubhra-D/Portfolio-Js" target="_blank"><button>Github</button></a>
-          </div>
+        <div class="projects-content">
+            <h2>My Projects</h2>
+            <div class="project">
+                <div class="project-image">
+                    <img src="./assests/project.png" alt="Project" />
+                </div>
+                <div class="project-description">
+                    <h3>Zappos</h3>
+                    <p>Zappos is an American online Clothing & Shoes website. Founded in 1999, it was acquired by Amazon in a $1.2 billion deal.</p>
+                    <a href="https://shubhra-d.github.io/Project-I/" target="_blank"><button>View Live</button></a>
+                    <a href="https://github.com/Shubhra-D/Project-I" target="_blank"><button>GitHub</button></a>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- GitHub Stats Section -->
-<section id="stats">
-    <div class="stats-content">
-      <h2>GitHub Stats</h2>
-
-    <!-- GitHub Stats Card -->
-      <img src="https://github-readme-stats.vercel.app/api?username=Shubhra-D&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
-
-    <!-- Most Used Languages -->
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shubhra-D&layout=compact&theme=tokyonight" alt="Most Used Languages" />
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shubhra-D&theme=tokyonight" alt="GitHub Streak Stats" class="streaks" />
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shubhra-D&theme=react-dark" alt="GitHub Activity Graph" class="contri-graph"/>
-
-    </div>
-  </section>
-    
+    <section id="stats">
+        <div class="stats-content">
+            <h2>GitHub Stats</h2>
+            <img src="https://github-readme-stats.vercel.app/api?username=Shubhra-D&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shubhra-D&layout=compact&theme=tokyonight" alt="Most Used Languages" />
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shubhra-D&theme=tokyonight" alt="GitHub Streak Stats" />
+            <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shubhra-D&theme=react-dark" alt="GitHub Activity Graph" />
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact">
-      <div class="contact-content">
-        <h2>Contact</h2>
-        <ul>
-          <li>
-            <i class="fa-brands fa-github"></i>
-            <a href="https://github.com/settings/profile" target="_blank"
-              >GitHub</a
-            >
-          </li>
-          <li>
-            <i class="fa-brands fa-linkedin"></i>
-            <a href="https://www.linkedin.com/in/shubhra-dwivedi-b7b513233/" target="_blank"
-              >LinkedIn</a
-            >
-          </li>
-
-          <li>
-            <i class="fa-solid fa-envelope"></i>
-            <a href="shubhradwivedi21@gmail.com">Email</a></li>
-          <li><i class="fa-solid fa-phone"></i>Phone: +91-9260920115</li>
-        </ul>
-      </div>
+        <div class="contact-content">
+            <h2>Contact</h2>
+            <ul>
+                <li><i class="fa-brands fa-github"></i><a href="https://github.com/Shubhra-D" target="_blank"> GitHub</a></li>
+                <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/shubhra-dwivedi-b7b513233/" target="_blank"> LinkedIn</a></li>
+                <li><i class="fa-solid fa-envelope"></i><a href="mailto:shubhradwivedi21@gmail.com"> Email</a></li>
+                <li><i class="fa-solid fa-phone"></i> Phone: +91-9260920115</li>
+            </ul>
+        </div>
     </section>
-   <h1>Thankyou for Giving your Time<img src="./assests/star.png" width="70px"/></h1>
+     <div class="footer">
+      <h1>Thank You for Your Time <img src="./assests/star.png" width="70px" /></h1>
+      <button id="backToTop">Back to Top</button>
+     </div>
+    
     <script src="script.js"></script>
-  </body>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 80, density: { enable: true, value_area: 800 } },
+          color: { value: "#ffffff" },
+          shape: { type: "circle" },
+          opacity: { value: 0.5 },
+          size: { value: 3 },
+          line_linked: { enable: true, color: "#ffffff", opacity: 0.4 },
+          move: { speed: 3 }
+        },
+        interactivity: {
+          events: {
+            onhover: { enable: true, mode: "repulse" }
+          }
+        }
+      });
+    </script>
+
+</body>
 </html>
+
