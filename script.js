@@ -48,10 +48,10 @@ backToTopButton.addEventListener("click", () => {
 document.getElementById("resume-link").addEventListener("click", function (event) {
     event.preventDefault(); // Prevent default anchor behavior
 
-    const resumeUrl = "https://drive.google.com/uc?export=download&id=1BYtPdDb4pKiVbdkeHhlcd50guR5MsE65";
+    const resumeUrl = "https://drive.google.com/uc?export=download&id=1OmmXo_ZaQM9alqmi5DDGjmSOE6v0ItV";
 
     // Open resume in a new tab
-    window.open("https://drive.google.com/file/d/1BYtPdDb4pKiVbdkeHhlcd50guR5MsE65/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1OmmXo_ZaQM9alqmi5DDGjmSOE6v0ItV_/view?usp=sharing", "_blank");
 
     // Trigger download
     const a = document.createElement("a");
