@@ -63,5 +63,5 @@ document.getElementById("resume-link").addEventListener("click", function (event
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
-  }, 1000); // 1-second delay
+  }, 1000); 
 });
