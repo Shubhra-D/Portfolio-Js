@@ -527,3 +527,25 @@ button {
     margin: 10px;
     padding: 10px;
 }
+/* Toast Setting */
+#toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #323232;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+    z-index: 9999;
+  }
+  
+  #toast.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

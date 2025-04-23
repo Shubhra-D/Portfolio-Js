@@ -46,22 +46,29 @@ backToTopButton.addEventListener("click", () => {
 });
 
 document.getElementById("resume-link").addEventListener("click", function (event) {
-  event.preventDefault(); // Prevent default anchor behavior
+  event.preventDefault();
 
-  const resumeId = "1OmmXo_ZaQM9alqmi5DDGjmSOE6v0ItV_"; // Correct ID
+  const resumeId = "1x-rRfSZfFogZogCagZJdRLb_C75tWu7L"; 
   const viewUrl = `https://drive.google.com/file/d/${resumeId}/view?usp=sharing`;
   const downloadUrl = `https://drive.google.com/uc?export=download&id=${resumeId}`;
 
-  // Open resume in a new tab
   window.open(viewUrl, "_blank");
 
-
   setTimeout(() => {
-      const a = document.createElement("a");
-      a.href = downloadUrl;
-      a.download = "Shubhra_Resume.pdf"; // Change filename as needed
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-  }, 1000); 
+    const a = document.createElement("a");
+    a.href = downloadUrl;
+    a.download = "Shubhra_Resume.pdf";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+
+    // Show toast
+    const toast = document.getElementById("toast");
+    toast.classList.add("show");
+
+    // Hide toast after 4 seconds
+    setTimeout(() => {
+      toast.classList.remove("show");
+    }, 4000);
+  }, 1000);//download resume after 1sec
 });
