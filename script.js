@@ -48,7 +48,7 @@ backToTopButton.addEventListener("click", () => {
 document.getElementById("resume-link").addEventListener("click", function (event) {
   event.preventDefault();
 
-  const resumeId = "1x-rRfSZfFogZogCagZJdRLb_C75tWu7L"; 
+  const resumeId = "1ry5Ty8Ifp5jwmTyrGGOfanaL4wOHCplA"; 
   const viewUrl = `https://drive.google.com/file/d/${resumeId}/view?usp=sharing`;
   const downloadUrl = `https://drive.google.com/uc?export=download&id=${resumeId}`;
 
